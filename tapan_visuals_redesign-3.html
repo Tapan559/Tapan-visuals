@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>TAPAN VISUALS | Wedding Photography & Cinematography</title>
+  <meta name="description" content="TAPAN VISUALS — Wedding photography, cinematic films and pre-wedding shoots. Explore packages and book on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b0d;--panel:#141417;--panel2:#1a1918;--gold:#d4b16a;--gold2:#f0d9a1;--cream:#f4efe5;--muted:#aaa5a0;--line:rgba(212,177,106,.24);--max:1160px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{background:var(--bg);color:var(--cream);font-family:Manrope,Arial,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(11,11,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .monogram{height:42px;width:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:25px}
+    .brand strong{display:block;letter-spacing:2.2px;font-size:14px}
+    .brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.5px;margin-top:2px}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:12px;color:#ded8ce}
+    .navlinks a:hover{color:var(--gold2)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border:1px solid var(--gold);background:var(--gold);color:#17130c;font-weight:800;font-size:11px;letter-spacing:.5px;transition:.2s}
+    .button:hover{background:var(--gold2);transform:translateY(-2px)}
+    .button.outline{background:transparent;color:var(--gold2)}
+    .button.outline:hover{background:var(--gold);color:#17130c}
+    .hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 76% 40%,rgba(123,85,42,.22),transparent 36%),linear-gradient(110deg,#0b0b0d 5%,rgba(11,11,13,.86) 48%,rgba(11,11,13,.55)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 24%,transparent 78%,rgba(0,0,0,.25));pointer-events:none}
+    .hero-content{position:relative;z-index:1;max-width:700px;padding:90px 0}
+    .eyebrow{color:var(--gold);font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:800;display:flex;align-items:center;gap:12px}
+    .eyebrow:before{content:"";height:1px;width:34px;background:var(--gold)}
+    h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05}
+    h1{font-size:clamp(48px,8vw,92px);margin:23px 0}
+    h1 em{color:var(--gold2);font-weight:400}
+    .hero p{color:#d0cbc2;max-width:540px;font-size:14px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .hero-note{display:flex;gap:20px;flex-wrap:wrap;margin-top:42px;color:#c4bcb0;font-size:10px;letter-spacing:1.4px;text-transform:uppercase}
+    .hero-note span:before{content:"✦";color:var(--gold);margin-right:8px}
+    section{padding:94px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}
+    .section-head h2{font-size:clamp(38px,5vw,58px);margin-top:13px}
+    .section-head p{max-width:420px;color:var(--muted);font-size:12px}
+    .packages{background:linear-gradient(180deg,#0b0b0d,#101012 55%,#0b0b0d)}
+    .package-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .package{position:relative;background:linear-gradient(150deg,#191817,#101012);border:1px solid var(--line);padding:25px 21px;min-height:340px;display:flex;flex-direction:column;transition:.25s}
+    .package:hover{border-color:var(--gold);transform:translateY(-5px)}
+    .package.featured{background:linear-gradient(150deg,#292116,#141210);border-color:var(--gold)}
+    .tag{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:800}
+    .package h3{font-size:28px;margin:18px 0 10px}
+    .package .desc{font-size:11px;color:var(--muted);min-height:48px}
+    .price{font-family:'Cormorant Garamond',serif;font-size:37px;color:var(--gold2);margin:22px 0 15px;white-space:nowrap}
+    .price small{font-family:Manrope,sans-serif;font-size:10px;color:var(--muted)}
+    .features{list-style:none;margin:0 0 22px;color:#d4cec4;font-size:11px}
+    .features li{margin:8px 0}.features li:before{content:"✦";color:var(--gold);margin-right:8px}
+    .package .button{margin-top:auto;width:100%}
+    .note{margin-top:18px;color:var(--muted);font-size:10px}
+    .portfolio-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:220px 220px;gap:14px}
+    .work{position:relative;overflow:hidden;background:#201c17;border:1px solid var(--line)}
+    .work:first-child{grid-row:span 2}
+    .work img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78);transition:transform .6s,filter .6s}
+    .work:hover img{transform:scale(1.05);filter:saturate(1)}
+    .work:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+    .work-label{position:absolute;z-index:1;left:20px;bottom:18px}
+    .work-label strong{display:block;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:500}
+    .work-label small{color:var(--gold2);font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+    .about{background:#111113;border-block:1px solid var(--line)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+    .about-art{min-height:410px;background:linear-gradient(0deg,rgba(11,11,13,.4),rgba(11,11,13,.05)),url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative;border:1px solid var(--line)}
+    .about-art:after{content:"T V";position:absolute;right:20px;bottom:12px;font-family:'Cormorant Garamond',serif;font-size:64px;color:rgba(240,217,161,.8)}
+    .about-copy h2{font-size:clamp(40px,5vw,60px);margin:16px 0 22px}
+    .about-copy p{color:var(--muted);font-size:13px;margin-bottom:16px}
+    .stats{display:flex;gap:30px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+    .stats strong{display:block;color:var(--gold2);font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500}
+    .stats span{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+    .booking-box{border:1px solid var(--line);padding:38px;background:radial-gradient(ellipse at top right,rgba(212,177,106,.12),transparent 50%),#121214;display:grid;grid-template-columns:1fr .9fr;gap:35px}
+    .booking-box h2{font-size:clamp(38px,5vw,54px);margin:15px 0}
+    .booking-box p{color:var(--muted);font-size:12px}
+    .booking-form{display:grid;gap:12px}
+    input,select,textarea{width:100%;padding:14px;background:#0b0b0d;color:var(--cream);border:1px solid #38332a;font:12px Manrope,sans-serif;outline:none;border-radius:0}
+    input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+    .booking-form .button{width:100%;cursor:pointer}
+    footer{padding:32px 0;border-top:1px solid var(--line);background:#080809}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .footer-row p{color:var(--muted);font-size:10px}
+    .footer-brand{letter-spacing:2px;font-size:12px}
+    .footer-brand span{color:var(--gold)}
+    .whatsapp-float{position:fixed;z-index:25;right:18px;bottom:18px;background:#25d366;color:#06140a;font-size:11px;font-weight:800;padding:13px 16px;box-shadow:0 6px 24px #0008}
+    @media(max-width:950px){.navlinks{gap:13px}.package-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}.portfolio-grid{grid-template-rows:190px 190px}}
+    @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 28px))}.nav{min-height:68px}.navlinks{display:none}.brand strong{font-size:12px}.hero{min-height:610px;background-position:60% center}.hero-content{padding:70px 0}section{padding:68px 0}.section-head{display:block}.section-head p{margin-top:16px}.package-grid{grid-template-columns:1fr}.package{min-height:0}.package .desc{min-height:0}.portfolio-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 170px 170px}.work:first-child{grid-column:span 2;grid-row:auto}.about-grid,.booking-box{grid-template-columns:1fr}.about-art{min-height:300px}.booking-box{padding:24px}.stats{gap:20px}.price{font-size:34px}.whatsapp-float{right:12px;bottom:12px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="TAPAN VISUALS home">
+        <span class="monogram">TV</span><span><strong>TAPAN VISUALS</strong><small>PHOTOGRAPHY & CINEMATOGRAPHY</small></span>
+      </a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#packages">Packages</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="button" href="#packages">BOOK NOW ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap"><div class="hero-content">
+        <div class="eyebrow">Wedding Stories · Since Every Moment Matters</div>
+        <h1>Your story.<br><em>Forever cinematic.</em></h1>
+        <p>We capture the honest emotions, beautiful rituals and little in-between moments that make your wedding uniquely yours.</p>
+        <div class="hero-actions"><a class="button" href="#packages">EXPLORE PACKAGES ↗</a><a class="button outline" href="#portfolio">▶ &nbsp; VIEW OUR WORK</a></div>
+        <div class="hero-note"><span>Wedding Photography</span><span>Cinematic Films</span><span>Pre-Wedding</span></div>
+      </div></div>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Made for your memories</div><h2>Wedding Packages</h2></div><p>Choose the coverage that fits your celebration. Every story deserves to be captured with care.</p></div>
+        <div class="package-grid">
+          <article class="package featured">
+            <span class="tag">Complete Story · Most Coverage</span><h3>Both Sides + Pre-Wedding</h3><p class="desc">Photography & cinematography for both families, plus a pre-wedding shoot.</p>
+            <div class="price">₹59,999</div><ul class="features"><li>Groom & bride side coverage</li><li>Wedding photography</li><li>Cinematic wedding film</li><li>Pre-wedding shoot</li></ul>
+            <button class="button book-package" data-package="Both Sides Wedding + Pre-Wedding — ₹59,999">BOOK THIS PACKAGE ↗</button>
+          </article>
+          <article class="package">
+            <span class="tag">Groom Side</span><h3>Wedding + Reception</h3><p class="desc">Wedding and reception coverage from the groom's side.</p>
+            <div class="price">₹39,999</div><ul class="features"><li>Groom side wedding</li><li>Reception coverage</li><li>Photography</li><li>Cinematography</li></ul>
+            <button class="button outline book-package" data-package="Groom Side Wedding + Reception — ₹39,999">BOOK THIS PACKAGE ↗</button>
+          </article>
+          <article class="package">
+            <span class="tag">Bride Side</span><h3>Bride Side Wedding</h3><p class="desc">Thoughtful coverage of the bride-side wedding celebration.</p>
+            <div class="price">₹24,999</div><ul class="features"><li>Bride side wedding</li><li>Photography</li><li>Cinematography</li><li>Wedding-day moments</li></ul>
+            <button class="button outline book-package" data-package="Bride Side Wedding — ₹24,999">BOOK THIS PACKAGE ↗</button>
+          </article>
+          <article class="package">
+            <span class="tag">Couple Session</span><h3>Pre-Wedding Shoot</h3><p class="desc">A relaxed couple photoshoot with a cinematic feel.</p>
+            <div class="price">₹14,999</div><ul class="features"><li>Couple photoshoot</li><li>Cinematic video</li><li>Creative concepts</li><li>Location planning</li></ul>
+            <button class="button outline book-package" data-package="Pre-Wedding Shoot — ₹14,999">BOOK THIS PACKAGE ↗</button>
+          </article>
+        </div>
+        <p class="note">Package inclusions, dates and travel requirements will be confirmed directly before booking.</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Frames that feel like you</div><h2>Selected Stories</h2></div><p>A glimpse into the moments we love to preserve. Your own wedding photographs can be added here as the portfolio grows.</p></div>
+        <div class="portfolio-grid">
+          <a class="work" href="#contact"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" alt="Wedding couple celebrating"><span class="work-label"><small>Wedding Story</small><strong>The Celebration</strong></span></a>
+          <a class="work" href="#contact"><img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Wedding couple portrait"><span class="work-label"><small>Portraits</small><strong>Just the Two</strong></span></a>
+          <a class="work" href="#contact"><img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding ceremony details"><span class="work-label"><small>Details</small><strong>Little Moments</strong></span></a>
+          <a class="work" href="#contact"><img loading="lazy" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration"><span class="work-label"><small>Celebrations</small><strong>All the Emotion</strong></span></a>
+          <a class="work" href="#contact"><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85" alt="Romantic outdoor scene"><span class="work-label"><small>Pre-Wedding</small><strong>Before Forever</strong></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-art" role="img" aria-label="Wedding photography visual"></div>
+        <div class="about-copy"><div class="eyebrow">Behind every frame</div><h2>Moments fade.<br><em style="color:var(--gold2)">Memories stay.</em></h2>
+          <p>TAPAN VISUALS is dedicated to wedding photography and cinematography that feels personal, timeless and full of emotion.</p>
+          <p>From the first rituals to the last dance, we focus on the people, details and real moments that tell your story.</p>
+          <a class="button outline" href="#contact">LET'S TALK ABOUT YOUR DAY ↗</a>
+          <div class="stats"><div><strong>Photo</strong><span>Honest moments</span></div><div><strong>Film</strong><span>Cinematic stories</span></div><div><strong>You</strong><span>Your memories</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap booking-box">
+        <div><div class="eyebrow">Save your date</div><h2>Let's make it<br><em style="color:var(--gold2)">unforgettable.</em></h2><p>Fill in your details and continue to WhatsApp. We’ll discuss your date, venue and package availability with you.</p><p style="margin-top:18px;color:var(--gold2)">WhatsApp: +91 62943 00718</p></div>
+        <form class="booking-form" id="bookingForm">
+          <input id="clientName" name="name" placeholder="Your name" required>
+          <input id="clientPhone" name="phone" type="tel" placeholder="Your phone number" required>
+          <input id="eventDate" name="date" type="date" aria-label="Event date" required>
+          <input id="eventPlace" name="place" placeholder="Wedding location / city" required>
+          <select id="chosenPackage" name="package" required>
+            <option value="">Choose your package</option>
+            <option>Both Sides Wedding + Pre-Wedding — ₹59,999</option>
+            <option>Groom Side Wedding + Reception — ₹39,999</option>
+            <option>Bride Side Wedding — ₹24,999</option>
+            <option>Pre-Wedding Shoot — ₹14,999</option>
+          </select>
+          <textarea id="extraDetails" name="details" rows="3" placeholder="Any details you'd like to share (optional)"></textarea>
+          <button class="button" type="submit">SEND BOOKING REQUEST ON WHATSAPP ↗</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><div><div class="footer-brand">TAPAN <span>VISUALS</span></div><p>Photography & Cinematography</p></div><p>© <span id="year"></span> TAPAN VISUALS. Made for memories.</p><p>WhatsApp: +91 62943 00718</p></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/916294300718" target="_blank" rel="noopener">☏ WHATSAPP</a>
+  <script>
+    const whatsappNumber = "916294300718";
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".book-package").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("chosenPackage").value = button.dataset.package;
+        document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+      });
+    });
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("clientName").value.trim();
+      const phone = document.getElementById("clientPhone").value.trim();
+      const date = document.getElementById("eventDate").value;
+      const place = document.getElementById("eventPlace").value.trim();
+      const selectedPackage = document.getElementById("chosenPackage").value;
+      const details = document.getElementById("extraDetails").value.trim() || "None";
+      const message = `Hello TAPAN VISUALS! I would like to make a booking enquiry.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEvent date: ${encodeURIComponent(date)}%0ALocation: ${encodeURIComponent(place)}%0APackage: ${encodeURIComponent(selectedPackage)}%0AAdditional details: ${encodeURIComponent(details)}`;
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
